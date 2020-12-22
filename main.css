@@ -5,7 +5,7 @@
 }
 
 .overlay {
-  background-color: rgba(2, 6, 20, 0.3);
+  background-color: rgba(2, 6, 20, 0.2);
 }
 .banner-container {
   background-image: url(https://f.hubspotusercontent40.net/hub/2577343/hubfs/new%20website%20hero%20background%20image%20%281%29.png?width=1440&name=new%20website%20hero%20background%20image%20%281%29.png);
@@ -13,7 +13,6 @@
   height: 100%;
   top: 0%;
   background-position: center;
-  position: absolute;
   background-size: cover;
   opacity: 0.9;
   overflow: hidden;
@@ -32,4 +31,111 @@
 }
 .banner h1 {
   font-weight: 600;
+}
+
+.video-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(https://f.hubspotusercontent40.net/hub/2577343/hubfs/Brand2Files/Untitled%20design%20%2829%29.png?width=1440&name=Untitled%20design%20%2829%29.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 655px;
+}
+.section-header {
+  margin-bottom: 20px;
+}
+
+header {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  border-bottom: 4px solid green;
+}
+nav {
+  float: right;
+  padding: 5px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTk7z6qSJdV8wmm0xwR4nrK5OPwhOfXJPqzrIG3ynOlOoGHyc4PSyrvpQ)
+    center;
+  background-size: contain;
+}
+/*MEDIA QUERY*/
+@media only screen and (max-width: 768px) {
+  header {
+    position: absolute;
+    border-bottom: 4px solid red;
+  }
+  a,
+  a:active,
+  a:visited {
+    color: white;
+  }
+  #menu-icon {
+    display: inline-block;
+  }
+  nav ul,
+  nav:active ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    right: 0;
+    border: 5px solid #000;
+    width: 100%;
+  }
+  nav li:last-of-type {
+    border-bottom: 0px;
+  }
+  nav ul li {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    background-color: red;
+    border-bottom: 1px solid #fff;
+  }
+  /*This makes sure the nav menu opens up */
+  nav:hover ul {
+    display: block;
+  }
+}
+.boxes {
+  margin: 5px;
+  background-color: red;
+  color: white;
+  height: 100px;
+  width: 100px;
+}
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-logo {
+  height: 42px;
+  width: 105 px;
 }
